@@ -39,9 +39,13 @@ function fallo(status){
     console.log(status)
 }
 
- get_data (url).
-    then(function(response){
-    exito(response)
-}).catch(function(error){
-    fallo(Error(error))
-})
+ const f = async function(){
+    try{
+    let response = await get_data(url)
+        console.log(response)
+    }catch( status ){
+        fallo(status)
+    }
+ }
+
+ f()

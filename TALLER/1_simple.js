@@ -1,7 +1,7 @@
 //dependencia a XMLHttpRequqest
 const http = require('xmlhttprequest').XMLHttpRequest
 
-const url = "https://pokeapi.co/api/v2/type"
+const url = "https://jsonplaceholder.typicode.com/todos"
 
 //funcion para conectar a una API publica
 function get_data(endpoint){
@@ -27,10 +27,10 @@ function get_data(endpoint){
 }
 
 function exito(data){
-    const tipos = JSON.parse(data).results
+    const tipos = JSON.parse(data)
     //recorrer el arreglo de tipos
     tipos.forEach(function (element) {
-        console.log(`Tipo: ${element.name}`)
+        console.log(`Title: ${element.title}`)
         console.log(`--------------------`)
     });
 }

@@ -4,7 +4,7 @@
   "description": "modo asincrono ",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon promises/1_simple.js"
+    "dev": "nodemon TALLER/1_simple.js"
   },
   "repository": {
     "type": "git",
@@ -23,6 +23,8 @@
   },
   "homepage": "https://github.com/camilon10101010/modo-asincrono#readme",
   "dependencies": {
+    "axios": "^1.1.2",
+    "needle": "^3.1.0",
     "nodemon": "^2.0.20",
     "request": "^2.88.2",
     "xmlhttprequest": "^1.8.0"
